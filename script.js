@@ -11,6 +11,16 @@ document.getElementById("myForm").addEventListener("submit", function(event) {
     var comment = document.getElementById("comment").value; // Retrieve the value of the "comment" input field
     var subscribe = document.getElementById("subscribe").checked; // Retrieve the value of the "subscribe" checkbox
   
+    
+    
+    if (name===" "||email===" "||age=== " "||visit===" "||rating===" "||comment===" ")
+    {
+    alert ("Please fill all requmenments fileds.")
+     return;   
+    }
+        
+        
+        
     // Display the entered data
     document.getElementById("result").innerHTML = `
       <p><strong>Name:</strong> ${name}</p>
